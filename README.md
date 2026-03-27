@@ -58,10 +58,16 @@
 # Скриншоты
 
 ![images](images/Ris1.png)
+Регистрация
 ![images](images/Ris2.png)
+Авторизация
 ![images](images/Ris3.png)
+Главный экран
 ![images](images/Ris4.png)
+Меню
 ![images](images/Ris5.png)
-![images](images/Ris5.png)
+Оформление заказа
 ![images](images/Ris6.png)
+История заказов
 ![images](images/Ris7.png)
+Профиль пользователя
