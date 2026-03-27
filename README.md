@@ -56,18 +56,17 @@
    Frontend: HTML, CSS, JavaScript (возможно использование фреймворков, таких как React или Vue.js).
 
 # Скриншоты
-
+## Регистрация
 ![images](images/Ris1.png)
-Регистрация
+## Авторизация
 ![images](images/Ris2.png)
-Авторизация
+## Главный экран
 ![images](images/Ris3.png)
-Главный экран
+## Меню
 ![images](images/Ris4.png)
-Меню
+## Оформление заказа
 ![images](images/Ris5.png)
-Оформление заказа
+## История заказов 
 ![images](images/Ris6.png)
-История заказов
+## Профиль пользователя 
 ![images](images/Ris7.png)
-Профиль пользователя
