@@ -1,0 +1,57 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.auth-container {
+    transition: all 0.3s ease;
+}
+
+.auth-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Focus Styles */
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Transition Effects */
+button, a {
+    transition: all 0.2s ease;
+}
+
+/* Navbar Styles (will be overridden by web component) */
+.custom-navbar {
+    background-color: #1e40af;
+    color: white;
+}
+
+/* Menu Item Card */
+.menu-item-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Summary Styles */
+.order-summary-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.order-summary-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 768px) {
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchBox Express - Order History</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex items-center justify-between mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">История Заказов</h1>
+            <div class="relative">
+                <select class="appearance-none bg-white border border-gray-300 rounded-lg pl-4 pr-8 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option>Все заказы</option>
+                    <option>Последние 7 дней </option>
+                    <option>Последние 30 дней</option>
+                    <option>В этом месяце</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <i data-feather="chevron-down" class="w-4 h-4"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Order History Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Порядок #</th>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Дата</th>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Товары</th>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Итого</th>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Статус</th>
+                            <th class="text-left py-3 px-4 font-semibold text-gray-700">Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-4">#LB-1001</td>
+                            <td class="py-4 px-4">Март 15, 2026</td>
+                            <td class="py-4 px-4">
+                                <div class="flex flex-col gap-1">
+                                    <span>Курица Гриль ×1</span>
+                                    <span>Чесночный хлеб ×1</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4">918.00р</td>
+                            <td class="py-4 px-4">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Завершенный</span>
+                            </td>
+                            <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-4">#LB-1001</td>
+                            <td class="py-4 px-4">Март 15, 2026</td>
+                            <td class="py-4 px-4">
+                                <div class="flex flex-col gap-1">
+                                    <span>Курица Гриль ×1</span>
+                                    <span>Чесночный хлеб ×1</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4">918.00р</td>
+                            <td class="py-4 px-4">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Завершенный</span>
+                            </td>
+                            <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-4">#LB-1001</td>
+                            <td class="py-4 px-4">Март 15, 2026</td>
+                            <td class="py-4 px-4">
+                                <div class="flex flex-col gap-1">
+                                    <span>Курица Гриль ×1</span>
+                                    <span>Чесночный хлеб ×1</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-4">918.00р</td>
+                            <td class="py-4 px-4">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Завершенный</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <button class="text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                                    <i data-feather="eye" class="w-4 h-{"ok":false,"message":"terminated"}></i>

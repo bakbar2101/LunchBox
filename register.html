@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunchBox Express - Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="auth-container bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-md">
+        <div class="auth-header bg-blue-600 p-6 text-white">
+            <h1 class="text-2xl font-bold flex items-center gap-2">
+                <i data-feather="user-plus"></i> Создать Учетную Запись
+            </h1>
+            <p class="text-blue-100 mt-1">Присоединиться к LunchBox</p>
+        </div>
+        
+        <div class="auth-forms p-6">
+            <!-- Registration Form -->
+            <form id="registerForm" class="register-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="registerName">Полное имя</label>
+                    <input type="text" id="registerName" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Петр Петров" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="registerEmail">Электронная почта</label>
+                    <input type="email" id="registerEmail" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="••••••••" required>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="••••••••" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="registerClass">Класс/Уровень</label>
+                    <select id="registerClass" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        <option value="">Select your class</option>
+                        <option value="1">1-й класс</option>
+                        <option value="2">2-й класс</option>
+                        <option value="3">3-й класс</option>
+                        <option value="4">4-й класс</option>
+                        <option value="5">5-й класс</option>
+                        <option value="6">6-й класс</option>
+                        <option value="7">7-й класс</option>
+                        <option value="8">8-й класс</option>
+                        <option value="9">9-й класс</option>
+                        <option value="10">10-й класс</option>
+                        <option value="11">11-й класс</option>
+                        <option value="12">12-й класс</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-green-600 text-white py-3 px-4 rounded-lg hover:bg-green-700 transition duration-200 flex items-center justify-center gap-2">
+                    <i data-feather="user-plus"></i> Регистрация
+                </button>
+            </form>
+            
+            <!-- Login Link -->
+            <div class="login-prompt mt-6 pt-6 border-t border-gray-200 text-center">
+                <p class="text-gray-600">У вас уже есть аккаунт</p>
+                <a href="index.html" class="mt-2 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
+                    Войти
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="components/navbar.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
